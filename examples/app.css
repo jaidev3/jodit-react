@@ -33,6 +33,20 @@ header,
 	min-height: 40px;
 }
 
+/* Make horizontal lines green in Jodit editor */
+.jodit_wysiwyg hr,
+.jodit-wysiwyg hr,
+.jodit-editor hr,
+.jodit-green-hr hr {
+	border-color: green !important;
+	background-color: green !important;
+	color: green !important;
+	border-top: 2px solid green !important;
+	border-bottom: none !important;
+	border-left: none !important;
+	border-right: none !important;
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

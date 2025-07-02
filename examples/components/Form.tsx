@@ -32,10 +32,11 @@ const Form = () => {
 	const [config, setConfig] = useState({
 		toolbarAdaptive: false,
 		readonly: false,
-		toolbar: true
+		toolbar: true,
+		editorCssClass: 'jodit-green-hr'
 	});
 
-	const [textAreaValue, setTextAreaValue] = useState('Test');
+	const [textAreaValue, setTextAreaValue] = useState('<p>This is a test with a horizontal line below:</p><hr><p>The horizontal line above should be green!</p>');
 
 	const [inputValue, setInputValue] = useState('');
 
