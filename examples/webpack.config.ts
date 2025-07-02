@@ -26,11 +26,15 @@ export default {
 
 	output: {
 		path: path.join(process.cwd(), './examples/build/'),
-		filename: 'app.js'
+		filename: 'app.js',
+		publicPath: '/build/'
 	},
 
 	devServer: {
-		static: './examples',
+		static: {
+			directory: path.join(process.cwd(), './examples'),
+			publicPath: '/'
+		},
 		open: true,
 		allowedHosts: 'all',
 		client: {
@@ -38,6 +42,7 @@ export default {
 			overlay: true
 		},
 		port: 4000,
-		hot: true
+		hot: true,
+		historyApiFallback: false
 	}
 };
